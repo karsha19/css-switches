@@ -4,10 +4,13 @@ table{
 }
 td{
     border: 1px solid;
-    padding: 10px;
+    padding: 30px;
 }
 
 /* side to side 1 */
+.side-to-side-1:hover{
+    cursor: pointer;
+}
 .side-to-side-1 label{
     background-color: red;
     width: 100px;
@@ -25,6 +28,7 @@ td{
     background-color: rgb(109, 255, 47);
 }
 .side-to-side-1 label::before{
+    font-family: 'Comic Neue', cursive;
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
@@ -41,5 +45,49 @@ td{
 .side-to-side-1 input:checked+label::before{
     left: 55px;
     content: "ON";
+}
+/* ------------------------ */
+/* side to side 2 */
+.side-to-side-2:hover{
+    cursor: pointer;
+}
+.side-to-side-2 label{
+    background-color: red;
+    width: 80px;
+    height: 15px;
+    display: block;
+    position: relative;
+    border-radius: 25px;
+}
+.side-to-side-2 input{
+    display: none;
+}
+.side-to-side-2 label::before{
+    display: flex;
+    background-color: rgb(206, 206, 206);
+    position: absolute;
+    left: -5px;
+    top: -6px;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    content: "";
+    transition: all 0.25s linear;
+}
+.side-to-side-2 input:checked+label::before{
+    left: 60px;
+    content: "";
+}
+.side-to-side-2 label::after{
+    content: "";
+    background-color: rgb(109, 255, 47);
+    width: 0%;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    transition: width 0.25s linear;
+}
+.side-to-side-2 input:checked+label::after{
+    width: 100%;
 }
 /* ------------------------ */
