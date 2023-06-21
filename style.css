@@ -91,3 +91,33 @@ td{
     width: 100%;
 }
 /* ------------------------ */
+.push-1 input{
+    display: none;
+}
+.push-1 label{
+    background-color: rgb(197, 197, 197);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow:  0px 0px 5px 2px rgba(0,0,0,0.40);
+    transition: all 0.25s linear;
+}
+.push-1 label::before{
+    content: "OFF";
+    font-family: 'Comic Neue', cursive;
+    color: grey;
+}
+.push-1 input:checked+label::before{
+    content: "ON";
+    color: green;
+}
+.push-1 input:checked+label{
+    background-color: rgb(109, 255, 47);
+}
+.push-1 label:active{
+    box-shadow:  0px 0px 5px 2px rgba(0,0,0,0.40) inset;
+}
