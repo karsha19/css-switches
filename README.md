@@ -1,3 +1,3 @@
-# css-switches
-diffrent type and styles of switches in css
+# Css-Switches
+different types and styles of switches in Css.
 View all switches at: https://priyanshugahlot.github.io/css-switches/
